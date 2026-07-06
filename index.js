@@ -184,8 +184,8 @@ app.get("/qr", (req, res) => {
   });
 });
 
-app.listen(PORT, () => {
-  log(`🌐 Servidor rodando em http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  log(`🌐 Servidor rodando na porta ${PORT} (0.0.0.0)`);
   startBot();
 });
 
