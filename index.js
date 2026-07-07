@@ -46,7 +46,7 @@ async function startBot() {
     sock = makeWASocket({
       auth: state,
       printQRInTerminal: true, // Mostra QR no terminal também
-      browser: Browsers.ubuntu("Chrome"), // Simula navegador Ubuntu
+      browser: ["BotZap", "Chrome", "1.0.0"], // 👈 TROQUE AQUI: Identidade customizada
       markOnlineOnConnect: true,
       syncFullHistory: false,
       generateHighQualityLinkPreview: true,
